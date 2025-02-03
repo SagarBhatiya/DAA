@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-void linear_search(const vector<int> arr, int key)
+void linear_search(const vector<int> &arr, int key)
 {
     int comp = 0;
     for (int num : arr)

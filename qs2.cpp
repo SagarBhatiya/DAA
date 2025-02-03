@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-void binary_Search(const vector<int>arr, int key)
+void binary_Search(const vector<int> &arr, int key)
 {
     int start = 0;
     int end = arr.size() - 1;
@@ -26,7 +26,7 @@ void binary_Search(const vector<int>arr, int key)
             end = mid - 1;
         }
     }
-    cout << "Not present " <<comp<< endl;
+    cout << "Not present " << comp << endl;
 }
 
 int main()
@@ -43,7 +43,7 @@ int main()
             cin >> arr[i];
         }
         int key;
-        cin >> key; 
+        cin >> key;
         binary_Search(arr, key);
     }
 }
